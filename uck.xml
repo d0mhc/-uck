@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uck>
+<config>
+	<content_type>text/plain; charset=utf-8</content_type>
+	<content_type_html>text/html; charset=utf-8</content_type_html>
+	<ifile>index</ifile>
+	<codevar>Q,W,E,R,T,Y,U,I,O,P,A,S,D,F,G,H,J,K,L,Z,X,C,V,B,N,M,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m,1,2,3,4,5,6,7,8,9,0</codevar>
+	<codelen>8</codelen>
+	<notfound>ERROR: Source's id not found.</notfound>
+	<nocode>ERROR: An id is required to view a source.</nocode>
+	<bad_request>ERROR: Bad request method.</bad_request>
+	<langs>abap,actionscript,ada,apache,applescript,asm,asp,autoit,bash,blitzbasic,bnf,c,c_mac,caddcl,cadlisp,cfdg,cfm,cpp-qt,cpp,csharp,css,d,delphi,diff,div,dos,dot,eiffel,fortran,freebasic,genero,gml,groovy,haskell,html4strict,idl,ini,inno,io,java,java5,javascript,latex,lisp,lua,m68k,matlab,mirc,mpasm,mysql,nsis,objc,ocaml-brief,ocaml,oobas,oracle8,pascal,per,perl,php-brief,php,plsql,python,qbasic,rails,reg,robots,ruby,sas,scheme,sdlbasic,smalltalk,smarty,sql,tcl,text,thinbasic,tsql,vb,vbnet,vhdl,visualfoxpro,winbatch,xml,xpp,z80</langs>
+	<langs_per_row>7</langs_per_row>
+	<tab_length>4</tab_length>
+	<adm_get>GTFO THIS PAGE, BITCH!</adm_get>
+	<wrong_pass>ERROR: Wrong password, n00b.</wrong_pass>
+	<passwd></passwd> <!-- La password va inserita tra quei due tag -->
+</config>
+<sources>
+	<in_use>00000001,00000002</in_use>
+</sources>
+</uck>

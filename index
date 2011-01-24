@@ -1,0 +1,24 @@
+			~uck nopaste
+			
+			>>>USE<<<
+
+Post:
+	<command> | curl -F 'fuck=<-' {local}
+	
+Highlighting:
+	{local}duck/?id=[ID]&lang=[LANG]
+
+
+			>>>EXAMPLES<<<
+
+Post:
+	cat source.c | curl -F 'fuck=<-' {local}
+	
+Highlighting:
+	{local}duck/?id=a0opckwJ&lang=c
+
+Available languages for highlighting:
+{langs}
+
+
+~uck NoPaste by d0mhc < phbn [at] live [dot] jp >
