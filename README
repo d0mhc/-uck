@@ -1,0 +1,112 @@
+~uck, un nopaste flat e minimale scritto in PHP.
+
+---
+
+Client:
+
+Vedi ./index
+
+---
+
+Admin:
+
+1. Copiare i file in una directory.
+2. Eseguire il file ./secpatch.php per vietare l'accesso via GET ai file XML.
+3. Eseguire il file ./passwd.php?t=password dove password è la password di amministrazione scelta, dopodiché aprire uck.xml ed inserire l'hash tra i tag <passwd></passwd>
+
+ 
+Parametri POST di adm.php (ATTENZIONE! SOLO RICHIESTE POST, NON GET!):
+
+pass :
+	Obbligatorio per ogni comando, contenente la password di amministrazione.
+	
+act :
+	Parametro contenente il comando, gli argomenti del comando sono contenuti in parametri dedicati.
+
+---
+
+Lista comandi e relativi argomenti:
+
+list :
+	Fa una lista di tutti i post presenti.
+	Argomenti:
+		ln (opzionale):
+			Se settato a true, la lista va a capo ogni 7 post.
+			Se omesso, la lista non va a capo.
+		
+del :
+	Elimina un post.
+	Argomenti:
+		id (obbligatorio):
+			Id del post da eliminare.
+	
+chpass :
+	Modifica la password di amministrazione.
+	Argomenti:
+		new (obbligatorio):
+			La nuova password di amministrazione.
+			
+---
+
+Modifica della index:
+Per modificare la index, è necessario modificare il file ./index.
+
+Certe keyword nel file, verranno sostituite da dei valori specifici:
+
+{local} :
+	URL del nopaste (senza index.php).
+
+{langs} :
+	Lista dei linguaggi di programmazione supportati, in righe da 7 di default, modificabili da ./uck.xml
+
+---
+	
+Modifica di ./uck.xml :
+
+Nomi dei tag e significato:
+
+content_type:
+	Valore dell'header content-type quando il source è richiesto raw.
+	
+content_type_html:
+	Valore dell'header content-type quando il source è richiesto con syntax highlighting.
+	
+ifile:
+	File da leggere per generare la index.
+	
+codevar:
+	Caratteri utilizzabili per generare gli id dei post, senza spazi e separati da una virgola.
+	
+codelen:
+	Lunghezza in caratteri degli id dei post.
+	
+notfound:
+	Testo da mostrare in caso di id non valido.
+	
+nocode:
+	Testo da mostrare in caso non venga fornito un id.
+	
+bad_request:
+	Testo da mostrare in caso di richiesta con metodo non valido.
+	
+langs:
+	Lista del linguaggi supportati, senza spazi e separati da una virgola.
+	
+langs_per_row:
+	Numero di linguaggi per riga da mostrare nella index.
+	
+tab_length:
+	Lunghezza in spazi di tab.
+	
+adm_get:
+	Testo da mostrare in caso di richiesta GET ad adm.php
+	
+wrong_pass:
+	Testo da mostrare in caso di password errata su adm.php
+	
+passwd:
+	Password di amministrazione opportunamente hashata, per generarla, vedere passwd.php
+	
+	
+in_use:
+	Id in uso.
